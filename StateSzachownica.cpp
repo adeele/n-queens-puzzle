@@ -26,10 +26,6 @@ bool StateSzachownica::isEqual(State *s) {
 
     return equal(board.begin(), board.end(), ss->board.begin(), ss->board.end());
 
-//    for (auto i1 = copy.begin(), i2 = board.begin(); i2 != copy.end(); i1++, i2++) {
-//        if (*i1 != *i2) return false;
-//    }
-    //return true;
 }
 
 StateSzachownica::StateSzachownica(int nsize, int seed) {
@@ -69,13 +65,13 @@ StateSzachownica::StateSzachownica(const StateSzachownica &c) {
 int StateSzachownica::getCollisions() {
     int *xs = new int[n];
     int *ys = new int[n];
-    int *diagsr = new int[2 * n - 1]; // \ diagonal
-    int *diagsl = new int[2 * n - 1]; // / diagonal
+    int *diagsr = new int[2 * n ]; // \ diagonal
+    int *diagsl = new int[2 * n ]; // / diagonal
 
-    memset(xs, 0, n);
-    memset(ys, 0, n);
-    memset(diagsr, 0, 2 * n - 1);
-    memset(diagsl, 0, 2 * n - 1);
+    memset(xs, 0, n* sizeof(int));
+    memset(ys, 0, n* sizeof(int));
+    memset(diagsr, 0, (2 * n)* sizeof(int));
+    memset(diagsl, 0, (2 * n)* sizeof(int));
 
     for (auto i: board) {
         xs[i.first]++;
@@ -140,6 +136,7 @@ bool StateSzachownica::move(unsigned int which, unsigned int where) {
             chess.first--;
             break;
         }
+        default:;
     }
 
     if (chess.first >= 0 && chess.first < n && chess.second >= 0 && chess.second < n) {
