@@ -5,10 +5,8 @@
 #include "ModelChess.h"
 #include "StateChessboard.h"
 
-int seed = 777;
-
 shared_ptr<State> ModelChess::getStartState() {
-    shared_ptr<State> startState(new StateChessboard(chessboardSize, seed));
+    shared_ptr<State> startState(new StateChessboard(chessboardSize, rand()));
     return startState;
 }
 

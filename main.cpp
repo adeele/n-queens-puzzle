@@ -4,8 +4,25 @@
 
 using namespace std;
 
-int main() {
-    ModelChess modelChess(5);
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        cout << "No parameter provided!";
+        return 0;
+    }
+
+    int size;
+    sscanf(argv[1], "%d", &size);
+
+    if (argc == 3) {
+        int seed;
+        sscanf(argv[2], "%d", &seed);
+        srand(seed);
+
+    } else {
+        srand(time(NULL));
+    }
+
+    ModelChess modelChess(size);
     SolverDFS solverDFS;
 
     solverDFS.setModel(modelChess);

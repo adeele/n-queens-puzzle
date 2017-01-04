@@ -4,7 +4,6 @@
 
 #include "StateChessboard.h"
 
-
 // Returns state's hash for easy comparison
 long long int StateChessboard::getHash() {
     long long hash = 0;

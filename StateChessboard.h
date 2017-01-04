@@ -12,6 +12,7 @@
 #include <cstring>
 #include <algorithm>
 #include <iostream>
+#include <memory>
 
 using namespace std;
 
@@ -25,6 +26,19 @@ public:
     StateChessboard(const StateChessboard &stateToAssign);
     bool move(unsigned int which, unsigned int where);
     void print();
+
+    struct Hasher {
+        std::size_t operator() (std::shared_ptr<State> const &state) const {
+            return (size_t) state->getHash();
+        }
+    };
+
+    struct Comparer {
+        size_t operator() (std::shared_ptr<State> const &a,
+                           std::shared_ptr<State> const &b) const {
+            return a->isEqual(&(*b));
+        }
+    };
 
 private:
     int chessboardSize;

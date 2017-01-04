@@ -12,6 +12,7 @@ CMakeFiles/pszt1.dir/SolverDFS.cpp.o: ../Solver.h
 CMakeFiles/pszt1.dir/SolverDFS.cpp.o: ../SolverDFS.cpp
 CMakeFiles/pszt1.dir/SolverDFS.cpp.o: ../SolverDFS.h
 CMakeFiles/pszt1.dir/SolverDFS.cpp.o: ../State.h
+CMakeFiles/pszt1.dir/SolverDFS.cpp.o: ../StateChessboard.h
 
 CMakeFiles/pszt1.dir/StateChessboard.cpp.o: ../State.h
 CMakeFiles/pszt1.dir/StateChessboard.cpp.o: ../StateChessboard.cpp

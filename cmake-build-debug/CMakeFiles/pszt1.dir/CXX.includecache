@@ -29,8 +29,12 @@ Model.h
 /home/adele/studies/pszt_proj/Model.h
 
 /home/adele/studies/pszt_proj/SolverDFS.cpp
+unordered_set
+-
 SolverDFS.h
 /home/adele/studies/pszt_proj/SolverDFS.h
+StateChessboard.h
+/home/adele/studies/pszt_proj/StateChessboard.h
 
 /home/adele/studies/pszt_proj/SolverDFS.h
 Solver.h
@@ -62,6 +66,8 @@ cstring
 algorithm
 -
 iostream
+-
+memory
 -
 
 /home/adele/studies/pszt_proj/main.cpp
