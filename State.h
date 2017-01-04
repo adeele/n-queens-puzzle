@@ -10,7 +10,7 @@ class State {
     virtual long long getHash() = 0;
     virtual int getHeuristic() = 0;
     virtual bool isEqual(State *s) = 0;
-    //virtual bool operator==(const State* other ) const = 0;
     virtual void print() = 0;
+    virtual int getPossibleMoves() = 0;
 };
 #endif //PSZT1_STATE_H

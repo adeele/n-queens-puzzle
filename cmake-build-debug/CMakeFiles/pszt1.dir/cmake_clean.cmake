@@ -1,13 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pszt1.dir/main.cpp.obj"
-  "CMakeFiles/pszt1.dir/SolverDFS.cpp.obj"
-  "CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj"
-  "CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj"
-  "CMakeFiles/pszt1.dir/SolverH.cpp.obj"
+  "CMakeFiles/pszt1.dir/main.cpp.o"
+  "CMakeFiles/pszt1.dir/SolverDFS.cpp.o"
+  "CMakeFiles/pszt1.dir/ModelChess.cpp.o"
+  "CMakeFiles/pszt1.dir/StateChessboard.cpp.o"
   "pszt1.pdb"
-  "pszt1.exe"
-  "pszt1.exe.manifest"
-  "libpszt1.dll.a"
+  "pszt1"
 )
 
 # Per-language clean rules from dependency scanning.

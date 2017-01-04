@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jedrek/ClionProjects/pszt1/Model.h
+/home/adele/studies/pszt_proj/Model.h
 vector
 -
 memory
 -
 State.h
-C:/Users/jedrek/ClionProjects/pszt1/State.h
+/home/adele/studies/pszt_proj/State.h
 
-C:/Users/jedrek/ClionProjects/pszt1/ModelSzachy.cpp
-ModelSzachy.h
-C:/Users/jedrek/ClionProjects/pszt1/ModelSzachy.h
-StateSzachownica.h
-C:/Users/jedrek/ClionProjects/pszt1/StateSzachownica.h
+/home/adele/studies/pszt_proj/ModelChess.cpp
+ModelChess.h
+/home/adele/studies/pszt_proj/ModelChess.h
+StateChessboard.h
+/home/adele/studies/pszt_proj/StateChessboard.h
 
-C:/Users/jedrek/ClionProjects/pszt1/ModelSzachy.h
+/home/adele/studies/pszt_proj/ModelChess.h
 Model.h
-C:/Users/jedrek/ClionProjects/pszt1/Model.h
+/home/adele/studies/pszt_proj/Model.h
 
-C:/Users/jedrek/ClionProjects/pszt1/Solver.h
+/home/adele/studies/pszt_proj/Solver.h
 Model.h
-C:/Users/jedrek/ClionProjects/pszt1/Model.h
+/home/adele/studies/pszt_proj/Model.h
 
-C:/Users/jedrek/ClionProjects/pszt1/SolverDFS.cpp
+/home/adele/studies/pszt_proj/SolverDFS.cpp
 SolverDFS.h
-C:/Users/jedrek/ClionProjects/pszt1/SolverDFS.h
+/home/adele/studies/pszt_proj/SolverDFS.h
 
-C:/Users/jedrek/ClionProjects/pszt1/SolverDFS.h
+/home/adele/studies/pszt_proj/SolverDFS.h
 Solver.h
-C:/Users/jedrek/ClionProjects/pszt1/Solver.h
+/home/adele/studies/pszt_proj/Solver.h
 list
 -
 memory
@@ -42,29 +42,15 @@ memory
 iostream
 -
 
-C:/Users/jedrek/ClionProjects/pszt1/SolverH.cpp
-SolverH.h
-C:/Users/jedrek/ClionProjects/pszt1/SolverH.h
+/home/adele/studies/pszt_proj/State.h
 
-C:/Users/jedrek/ClionProjects/pszt1/SolverH.h
-Solver.h
-C:/Users/jedrek/ClionProjects/pszt1/Solver.h
-list
--
-memory
--
-iostream
--
+/home/adele/studies/pszt_proj/StateChessboard.cpp
+StateChessboard.h
+/home/adele/studies/pszt_proj/StateChessboard.h
 
-C:/Users/jedrek/ClionProjects/pszt1/State.h
-
-C:/Users/jedrek/ClionProjects/pszt1/StateSzachownica.cpp
-StateSzachownica.h
-C:/Users/jedrek/ClionProjects/pszt1/StateSzachownica.h
-
-C:/Users/jedrek/ClionProjects/pszt1/StateSzachownica.h
+/home/adele/studies/pszt_proj/StateChessboard.h
 State.h
-C:/Users/jedrek/ClionProjects/pszt1/State.h
+/home/adele/studies/pszt_proj/State.h
 cstdlib
 -
 utility
@@ -78,13 +64,11 @@ algorithm
 iostream
 -
 
-C:/Users/jedrek/ClionProjects/pszt1/main.cpp
+/home/adele/studies/pszt_proj/main.cpp
 iostream
 -
 SolverDFS.h
-C:/Users/jedrek/ClionProjects/pszt1/SolverDFS.h
-ModelSzachy.h
-C:/Users/jedrek/ClionProjects/pszt1/ModelSzachy.h
-StateSzachownica.h
-C:/Users/jedrek/ClionProjects/pszt1/StateSzachownica.h
+/home/adele/studies/pszt_proj/SolverDFS.h
+ModelChess.h
+/home/adele/studies/pszt_proj/ModelChess.h
 

@@ -4,11 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/jedrek/ClionProjects/pszt1/ModelSzachy.cpp" "C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/pszt1.dir/ModelSzachy.cpp.obj"
-  "C:/Users/jedrek/ClionProjects/pszt1/SolverDFS.cpp" "C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/pszt1.dir/SolverDFS.cpp.obj"
-  "C:/Users/jedrek/ClionProjects/pszt1/SolverH.cpp" "C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/pszt1.dir/SolverH.cpp.obj"
-  "C:/Users/jedrek/ClionProjects/pszt1/StateSzachownica.cpp" "C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/pszt1.dir/StateSzachownica.cpp.obj"
-  "C:/Users/jedrek/ClionProjects/pszt1/main.cpp" "C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/pszt1.dir/main.cpp.obj"
+  "/home/adele/studies/pszt_proj/ModelChess.cpp" "/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/pszt1.dir/ModelChess.cpp.o"
+  "/home/adele/studies/pszt_proj/SolverDFS.cpp" "/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/pszt1.dir/SolverDFS.cpp.o"
+  "/home/adele/studies/pszt_proj/StateChessboard.cpp" "/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/pszt1.dir/StateChessboard.cpp.o"
+  "/home/adele/studies/pszt_proj/main.cpp" "/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/pszt1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

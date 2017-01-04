@@ -1,3 +1,3 @@
-C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/pszt1.dir
-C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jedrek/ClionProjects/pszt1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/adele/studies/pszt_proj/cmake-build-debug/CMakeFiles/pszt1.dir

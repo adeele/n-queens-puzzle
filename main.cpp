@@ -1,16 +1,15 @@
 #include <iostream>
 #include "SolverDFS.h"
-#include "ModelSzachy.h"
-#include "StateSzachownica.h"
+#include "ModelChess.h"
 
 using namespace std;
 
 int main() {
-    ModelSzachy ms(5);
-    SolverDFS dfs;
+    ModelChess modelChess(5);
+    SolverDFS solverDFS;
 
-    dfs.setModel(ms);
-    shared_ptr<State> s = dfs.solve();
+    solverDFS.setModel(modelChess);
+    shared_ptr<State> finalState = solverDFS.solve();
 
     return 0;
 }

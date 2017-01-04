@@ -9,6 +9,7 @@
 #include <list>
 #include <memory>
 #include <iostream>
+
 using namespace std;
 
 class SolverDFS : public Solver{
@@ -17,11 +18,7 @@ private:
 
 public:
     void setModel(Model &m);
-
     shared_ptr<State> solve();
-
-    void reset();
 };
-
 
 #endif //PSZT1_SOLVERDFS_H

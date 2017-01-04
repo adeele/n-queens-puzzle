@@ -9,47 +9,44 @@ void SolverDFS::setModel(Model &m) {
 }
 
 shared_ptr<State> SolverDFS::solve() {
-    shared_ptr<State> start = model->getStartState();
-    list<shared_ptr<State>> A;
-    list<shared_ptr<State>> visited;
-    A.push_front(start);
-    bool finish = false;
+    shared_ptr<State> startState = model->getStartState();
+    list<shared_ptr<State>> statesToVisit;
+    list<shared_ptr<State>> visitedStates;
+    startState->print();
 
-    // Maybe we've got lucky?
-    if (model->isTerminalState(A.front())) {
-      A.front()->print();
-      return A.front();
+    if (model->isFinalState(startState)) {
+        startState->print();
+        return startState;
     }
 
-    while (!finish) {
-        vector<pair<shared_ptr<State>, int>> r = model->getNextStates(A.front());
-        A.pop_front();
+    statesToVisit.push_front(startState);
+    visitedStates.push_front(startState);
 
-        for (auto s : r) {
-            bool present = false;
+    while (true) {
+        vector<pair<shared_ptr<State>, int>> nextStatesWithStatus = model->getNextStates(statesToVisit.front());
+        statesToVisit.pop_front();
 
-            // Checks if next states hasn't been already visited
-            for (auto i : visited) {
-                if (i->getHash() == s.first->getHash() && i->isEqual(s.first.get())) {
-                    present = true;
+        for (auto currentStateWithStatus : nextStatesWithStatus) {
+            bool wasVisited = false;
+
+            // Checks if next state hasn't been already visited
+            for (auto i : visitedStates) {
+                if (i->getHash() == currentStateWithStatus.first->getHash() &&
+                    i->isEqual(currentStateWithStatus.first.get())) {
+                    wasVisited = true;
                     break;
                 }
             }
 
-            if (!present) {
-                A.push_front(s.first);
-                s.first->print();
-                visited.push_back(s.first);
-                if (model->isTerminalState(s.first)) {
-                    finish = true;
-                    break;
+            if (!wasVisited) {
+                if (model->isFinalState(currentStateWithStatus.first)) {
+                    currentStateWithStatus.first->print();
+                    return currentStateWithStatus.first;
                 }
+
+                statesToVisit.push_front(currentStateWithStatus.first);
+                visitedStates.push_front(currentStateWithStatus.first);
             }
         }
     }
-
-    return A.back();
-}
-
-void SolverDFS::reset() {
 }
