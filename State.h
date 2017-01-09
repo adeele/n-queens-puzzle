@@ -4,9 +4,13 @@
 
 #ifndef PSZT1_STATE_H
 #define PSZT1_STATE_H
+/*
+ * Interface
+ * Gives a definition for some state of a problem
+ */
 
 class State {
-    public:
+public:
     virtual long long getHash() = 0;
     virtual int getHeuristic() = 0;
     virtual bool isEqual(State *s) = 0;

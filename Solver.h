@@ -7,6 +7,11 @@
 
 #include "Model.h"
 
+/*
+ * Interface
+ * Represents generic solver for a problem
+ */
+
 class Solver {
 public:
     virtual void setModel(Model &model) = 0;

@@ -31,6 +31,8 @@ Model.h
 /home/adele/studies/pszt_proj/SolverDFS.cpp
 unordered_set
 -
+stack
+-
 SolverDFS.h
 /home/adele/studies/pszt_proj/SolverDFS.h
 StateChessboard.h

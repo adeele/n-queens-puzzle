@@ -11,6 +11,11 @@
 
 using namespace std;
 
+/*
+ * Interface
+ * Defines problem to solve
+ */
+
 class Model {
 public:
     virtual shared_ptr<State> getStartState() = 0;

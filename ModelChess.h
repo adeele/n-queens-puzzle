@@ -7,6 +7,10 @@
 
 #include "Model.h"
 
+/*
+ * Represents model for issue specified to a chessboard
+ */
+
 class ModelChess: public Model {
     int chessboardSize;
 

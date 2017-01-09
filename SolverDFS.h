@@ -12,9 +12,12 @@
 
 using namespace std;
 
+/*
+ * Represents solver using DFS algorithm to search through the graph
+ */
+
 class SolverDFS : public Solver{
-private:
-        Model *model;
+    Model *model;
 
 public:
     void setModel(Model &m);
